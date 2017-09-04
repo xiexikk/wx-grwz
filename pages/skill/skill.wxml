@@ -1,0 +1,54 @@
+<!-- head.wxml -->
+<include src="../common/head.wxml"/>
+
+<!-- my-skills -->
+<view id="my-skills" class="my-com my-skills">
+  <view class="hd-tit">
+    <text class="ti"></text> 
+    <label class="line"></label>
+  </view>
+  <view class="skills-list">
+    <block wx-for="">
+      <view class="tp">
+        <image src="../images/s1.png" width="" height="" class="img"></image>
+      </view>
+      <view class="tp">
+        <image src="../images/s2.png" width="" height="" class="img"></image>
+      </view>
+      <view class="tp">
+        <image src="../images/s3.png" width="" height="" class="img"></image>
+      </view>
+      <view class="tp">
+        <image src="../images/s4.png" width="" height="" class="img"></image>
+      </view>
+        <view class="tp">
+        <image src="../images/s5.png" width="" height="" class="img"></image>
+      </view>
+        <view class="tp">
+        <image src="../images/s6.png" width="" height="" class="img"></image>
+      </view>
+        <view class="tp">
+        <image src="../images/s7.png" width="" height="" class="img"></image>
+      </view>
+      <view class="tp">
+        <image src="../images/s8.png" width="" height="" class="img"></image>
+      </view>
+      <view class="tp">
+        <image src="../images/s9.png" width="" height="" class="img"></image>
+      </view>
+    </block>
+  </view>
+  <view class="sk-txt-list">
+    <block wx-for="">
+      <view class="pp">1.熟练使用WebStorm、Sublime、Dreamweaver、Photoshop、Fireworks等软件工具;</view>
+      <view class="pp">2.具备UI设计基础，会切图标注，制作简单图片图标；</view>
+      <view class="pp">3.熟练应用HTML5、CSS3、Bootstrap，能快速构建页面、解决浏览器兼容性问题；</view>
+      <view class="pp">4.熟悉JavaScript及面向对象编程，熟练使用jQuery、zepto等主流库实现交互效果；</view>
+      <view class="pp">5.熟练使用Ajax异步刷新技术，使用artTemplate等模板引擎渲染数据，实现前后端交互；</view>
+      <view class="pp">6.熟练使用Sass、Less提高开发效率，熟悉es6的基础语法，编写更具模块化和可维护性的代码；</view>
+      <view class="pp">7.熟悉npm包管理工具的使用，熟悉运用svn,browser-sync等技术； </view>
+      <view class="pp">8.了解vue等 MV* 框架，能够使用其基础模板语法、组件开发简单的单页应用；</view>
+      <view class="pp">9.了解微信小程序开发，页面布局，常见功能效果制作等等；</view>
+    </block>
+  </view>
+</view>

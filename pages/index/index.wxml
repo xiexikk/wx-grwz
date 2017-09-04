@@ -1,0 +1,74 @@
+<!-- head.wxml -->
+<include src="../common/head.wxml"/>
+
+<!-- banner -->
+<swiper id="banner" class="banner" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <view class="welcome">
+    <view class="hi">Hello</view>
+    <text class="ti">Welcome to my website</text>
+  </view>
+  <block wx:for="{{imgUrls}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="" height=""/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- my-works -->
+  <view id="my-links" class="my-com my-links">
+    <view class="hd-tit">
+      <text class="ti"></text> 
+      <label class="line"></label>
+    </view>
+    <view class="web-list-com">
+      <view class="web-list">
+        <label class="w-ti">PC端：</label>
+        <view class="list">
+          <block wx:for="{{worksPC}}"  wx:key="*this">     
+            <navigator url="" class="li">{{item.ti}}</navigator>
+          </block>
+        </view>
+      </view>
+      <view class="web-list">
+        <label class="w-ti">Wap端：</label>
+        <view class="list">
+          <block wx:for="{{worksWap}}"  wx:key="*this">     
+            <navigator url="" class="li">{{item.ti}}</navigator>
+          </block>
+        </view>
+      </view>
+      <view class="web-list">
+        <label class="w-ti">站酷：</label>
+        <view class="list">
+          <navigator url="" class="li">业余UI设计作品集</navigator>
+        </view>
+      </view>
+    </view>
+</view>
+
+  
+<!-- nav -->
+<!-- <view class="nav">
+  <view class="in">
+    <block>
+        <navigator url="" class="li">
+          <icon type="String" class="ico ico01" />
+          <text class="ti">首页</text>
+        </navigator>
+        <navigator url="" class="li">
+          <icon type="String" class="ico ico02" />
+          <text class="ti">作品</text>
+        </navigator>
+        <navigator url="" class="li">
+          <icon type="String" class="ico ico03" />
+          <text class="ti">技能</text>
+        </navigator>
+        <navigator url="" class="li">
+          <icon type="String" class="ico ico04" />
+          <text class="ti">我的</text>
+        </navigator>
+      </block>
+    </view>
+  </view> -->
+
+

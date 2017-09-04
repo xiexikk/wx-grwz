@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/work/work",
+    "pages/skill/skill",
+    "pages/my/my",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#080808",
+    "navigationBarTitleText": "xiexikk个人网站",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "black"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor":"#e6c100",
+    "backgroundColor": "#080808",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/ico-home.png",
+        "selectedIconPath":"pages/images/ico-home-h.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/work/work",
+        "iconPath": "pages/images/ico-works.png",
+        "selectedIconPath": "pages/images/ico-works-h.png",
+        "text": "作品"
+      },
+      {
+        "pagePath": "pages/skill/skill",
+        "iconPath": "pages/images/ico-skill.png",
+        "selectedIconPath": "pages/images/ico-skill-h.png",
+        "text": "技能"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/images/ico-my.png",
+        "selectedIconPath": "pages/images/ico-my-h.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "uploadFile": 10000
+  },
+  "debug": true
+}

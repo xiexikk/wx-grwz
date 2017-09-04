@@ -1,0 +1,45 @@
+<!-- head.wxml -->
+<include src="../common/head.wxml"/>
+
+<!-- my -->
+<view class="my">
+  <view class="my-head">
+    <image src="../images/myTx.jpg" class="imgs"></image>
+  </view>
+  <view class="my-info">
+    <block>
+      <view class="li">
+        <label class="ti">姓名：</label>
+        <text class="tx">谢惜康</text>
+      </view>
+      <view class="li">
+        <label class="ti">性别：</label>
+        <text class="tx">男</text>
+      </view>
+      <view class="li">
+        <label class="ti">手机：</label>
+        <text class="tx">13660310897</text>
+      </view>
+      <view class="li">
+        <label class="ti">微信：</label>
+        <text class="tx">xxk494535607</text>
+      </view>
+      <view class="li">
+        <label class="ti">邮箱：</label>
+        <text class="tx">13660310897@163.com</text>
+      </view>
+      <view class="li">
+        <label class="ti">职业：</label>
+        <text class="tx">web前端开发工程师</text>
+      </view>
+      <view class="li">
+        <label class="ti">工作：</label>
+        <text class="tx">2年多经验</text>
+      </view>
+      <view class="li">
+        <label class="ti">个站：</label>
+        <text class="tx">http://120.77.250.136/</text>
+      </view>
+    </block>
+  </view>
+</view>

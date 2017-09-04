@@ -1,0 +1,49 @@
+<!-- head.wxml -->
+ <include src="../common/head.wxml"/> 
+
+<!-- my-works -->
+<view id="my-works" class="my-com my-works">
+  <view class="hd-tit">
+    <text class="ti"></text> 
+    <label class="line"></label>
+  </view>
+  <view class="work-tab" bindtap="tabFun">
+    <view class="li {{tabArr.curHdIndex=='0'? 'cur' : ''}}" data-id="0">PC端</view>
+    <view class="li {{tabArr.curHdIndex=='1'? 'cur' : ''}}" data-id="1">WAP端</view>
+  </view>
+
+  <scroll-view scorll-y="true" bindscrolltolower class="works-lists">
+    <view class="works-list {{tabArr.curBdIndex=='0'? 'show' : ''}}" id="works-list-pc" >
+      <block wx:for="{{worksPC}}" wx:for-item="itemP" wx:key="*this-pc">
+        <view class="item" data-id="{{itemP.id}}">
+          <view class="tp">
+              <image src="{{itemP.imgs}}" width="" height="" class="img" ></image> 
+          </view>
+          <view class="txt">
+            <text class="tit">{{itemP.title}}</text>
+            <view class="txt">{{itemP.text}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="works-list {{tabArr.curBdIndex=='1'? 'show' : ''}}" id="works-list-wap">
+      <block wx:for="{{worksWap}}" wx:for-item="itemW" wx:key="*this-wap">
+        <view class="item" data-id="{{itemW.id}}">
+          <view class="tp">
+              <image src="{{itemW.imgs}}" width="" height="" class="img" ></image> 
+          </view>
+          <view class="txt">
+            <text class="tit">{{itemW.title}}</text>
+            <view class="txt">{{itemW.text}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+
+  <view class="weui-loadmore" hidden="{{isHideLoadMore}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">{{loadTxt}}</view>
+  </view>
+
+</view>
